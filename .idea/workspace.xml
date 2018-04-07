@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cbc9371-a419-4c36-9591-f7b7eec73f46" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CoreNLPHttpResponse.java" afterPath="$PROJECT_DIR$/src/main/java/CoreNLPHttpResponse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/IndexHandler.java" afterPath="$PROJECT_DIR$/src/main/java/IndexHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Routes.java" afterPath="$PROJECT_DIR$/src/main/java/Routes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SearchHandler.java" afterPath="$PROJECT_DIR$/src/main/java/SearchHandler.java" />
     </list>
     <ignored path="PS-Search.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,13 +25,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CoreNLPWrapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java">
+      <file leaf-file-name="CoreNLPHttpRequest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPHttpRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="765">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="e#1111#1112#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,10 +64,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/CoreNLPHttpRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SearchHttpServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SearchHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/IndexHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Routes.java" />
         <option value="$PROJECT_DIR$/src/main/java/CoreNLPHttpResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SearchHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java" />
       </list>
     </option>
@@ -847,12 +845,12 @@
       <workItem from="1523087473443" duration="2597000" />
       <workItem from="1523097105752" duration="3266000" />
       <workItem from="1523105831472" duration="9186000" />
-      <workItem from="1523119310925" duration="2943000" />
+      <workItem from="1523119310925" duration="4335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24136000" />
+    <option name="totallyTimeSpent" value="25528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -925,15 +923,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -947,7 +937,9 @@
         <state relative-caret-position="289">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1523123581000" expanded="true" signature="36:79" ph="/**...*/" />
+            <marker date="1523123581000" expanded="true" signature="223:330" ph="{...}" />
+            <marker date="1523123581000" expanded="true" signature="387:693" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1044,38 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPHttpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <marker date="1523114971000" expanded="true" signature="0:43" ph="/**...*/" />
-            <marker date="1523114971000" expanded="true" signature="367:475" ph="{...}" />
-            <marker date="1523114971000" expanded="false" signature="516:531" ph=" { " />
-            <marker date="1523114971000" expanded="false" signature="551:557" ph=" }" />
-            <marker date="1523114971000" expanded="false" signature="589:604" ph=" { " />
-            <marker date="1523114971000" expanded="false" signature="642:648" ph=" }" />
-            <marker date="1523114971000" expanded="true" signature="686:992" ph="{...}" />
-            <marker date="1523114971000" expanded="false" signature="1039:1054" ph=" { " />
-            <marker date="1523114971000" expanded="false" signature="1106:1112" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IndexHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <marker date="1523120052000" expanded="true" signature="7:244" ph="..." />
-            <marker date="1523120052000" expanded="true" signature="246:289" ph="/**...*/" />
-            <marker date="1523120052000" expanded="true" signature="369:376" ph="{...}" />
-            <marker date="1523120052000" expanded="true" signature="444:653" ph="{...}" />
-            <marker date="1523120052000" expanded="true" signature="715:833" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Routes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1083,23 +1043,6 @@
           <folding>
             <marker date="1523120064000" expanded="true" signature="43:86" ph="/**...*/" />
             <marker date="1523120064000" expanded="true" signature="167:291" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SearchHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding>
-            <marker date="1523119999000" expanded="true" signature="7:115" ph="..." />
-            <marker date="1523119999000" expanded="true" signature="117:160" ph="/**...*/" />
-            <marker date="1523119999000" expanded="true" signature="249:256" ph="{...}" />
-            <marker date="1523119999000" expanded="true" signature="305:502" ph="{...}" />
-            <marker date="1523119999000" expanded="false" signature="573:588" ph=" { " />
-            <marker date="1523119999000" expanded="false" signature="621:627" ph=" }" />
-            <marker date="1523119999000" expanded="true" signature="703:778" ph="{...}" />
-            <marker date="1523119999000" expanded="true" signature="859:1248" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1119,10 +1062,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SearchHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <marker date="1523119999000" expanded="true" signature="7:115" ph="..." />
+            <marker date="1523119999000" expanded="true" signature="117:160" ph="/**...*/" />
+            <marker date="1523119999000" expanded="true" signature="249:256" ph="{...}" />
+            <marker date="1523119999000" expanded="true" signature="305:502" ph="{...}" />
+            <marker date="1523119999000" expanded="true" signature="573:588" ph=" { " />
+            <marker date="1523119999000" expanded="true" signature="621:627" ph=" }" />
+            <marker date="1523119999000" expanded="true" signature="703:778" ph="{...}" />
+            <marker date="1523119999000" expanded="true" signature="859:1248" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPHttpResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        <state relative-caret-position="170">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <marker date="1523122325000" expanded="true" signature="41:84" ph="/**...*/" />
             <marker date="1523122325000" expanded="true" signature="649:718" ph="{...}" />
@@ -1135,12 +1095,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/IndexHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <marker date="1523120052000" expanded="true" signature="7:244" ph="..." />
+            <marker date="1523120052000" expanded="true" signature="246:289" ph="/**...*/" />
+            <marker date="1523120052000" expanded="true" signature="369:376" ph="{...}" />
+            <marker date="1523120052000" expanded="true" signature="444:653" ph="{...}" />
+            <marker date="1523120052000" expanded="true" signature="715:833" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        <state relative-caret-position="238">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1523123581000" expanded="true" signature="36:79" ph="/**...*/" />
+            <marker date="1523123581000" expanded="true" signature="223:330" ph="{...}" />
+            <marker date="1523123581000" expanded="true" signature="387:693" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPHttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
           </folding>
         </state>
       </provider>

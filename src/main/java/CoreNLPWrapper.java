@@ -1,13 +1,5 @@
-import edu.stanford.nlp.coref.data.*;
-import edu.stanford.nlp.coref.data.Document;
-import edu.stanford.nlp.pipeline.CoreNLPProtos;
-
-import java.util.Properties;
-
-
 import edu.stanford.nlp.simple.*;
 
-import java.util.*;
 
 /**
  * Created by dakshins on 07/04/18.
@@ -18,7 +10,7 @@ public class CoreNLPWrapper
     final Sentence sentence;
     public CoreNLPWrapper(final String searchText)
     {
-        this.searchText = searchText;
+        this.searchText = searchText.replace('+',' ');
         sentence = new Sentence(searchText);
     }
     
