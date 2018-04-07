@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cbc9371-a419-4c36-9591-f7b7eec73f46" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SearchHttpServer.java" afterPath="$PROJECT_DIR$/src/main/java/SearchHttpServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CoreNLPHttpResponse.java" afterPath="$PROJECT_DIR$/src/main/java/CoreNLPHttpResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/IndexHandler.java" afterPath="$PROJECT_DIR$/src/main/java/IndexHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Routes.java" afterPath="$PROJECT_DIR$/src/main/java/Routes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SearchHandler.java" afterPath="$PROJECT_DIR$/src/main/java/SearchHandler.java" />
     </list>
     <ignored path="PS-Search.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Routes.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Routes.java">
+      <file leaf-file-name="CoreNLPWrapper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,13 +64,13 @@
         <option value="$PROJECT_DIR$/src/main/java/HttpServer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/IndexHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CoreNLPHttpResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/CoreNLPHttpRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SearchHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/SearchHttpServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SearchHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/IndexHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Routes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CoreNLPHttpResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java" />
       </list>
     </option>
   </component>
@@ -145,6 +149,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PS-Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PS-Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PS-Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PS-Search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -207,7 +243,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
   </component>
-  <component name="RunManager" selected="Application.SearchHttpServer">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration default="true" type="#com.intellij.j2meplugin.run.J2MEConfigurationType" factoryName="J2ME">
       <module name="" />
       <USER_OPTIONS />
@@ -775,23 +811,23 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="SearchHttpServer" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="SearchHttpServer" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="PS-Search" />
+      <module name="NLPSearch" />
       <envs />
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.SearchHttpServer" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
     </list>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -811,18 +847,19 @@
       <workItem from="1523087473443" duration="2597000" />
       <workItem from="1523097105752" duration="3266000" />
       <workItem from="1523105831472" duration="9186000" />
-      <workItem from="1523119310925" duration="167000" />
+      <workItem from="1523119310925" duration="2943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21360000" />
+    <option name="totallyTimeSpent" value="24136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -839,12 +876,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="MaxCompute Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -892,7 +928,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java</url>
-          <line>10</line>
+          <line>20</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -911,11 +947,7 @@
         <state relative-caret-position="289">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding>
-            <marker date="1523115408000" expanded="true" signature="49:92" ph="/**...*/" />
-            <marker date="1523115408000" expanded="false" signature="202:217" ph=" { " />
-            <marker date="1523115408000" expanded="false" signature="246:252" ph=" }" />
-            <marker date="1523115408000" expanded="true" signature="304:319" ph=" { " />
-            <marker date="1523115408000" expanded="true" signature="331:337" ph=" }" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -954,6 +986,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1523106347000" expanded="true" signature="5:320" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="12:312" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="64:304" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="72:215" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="108:147" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="223:296" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="261:284" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -971,64 +1012,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="90" selection-start-line="7" selection-start-column="90" selection-end-line="7" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IndexHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <marker date="1523110992000" expanded="false" signature="7:286" ph="..." />
-            <marker date="1523110992000" expanded="true" signature="288:331" ph="/**...*/" />
-            <marker date="1523110992000" expanded="true" signature="406:413" ph=" { " />
-            <marker date="1523110992000" expanded="true" signature="413:418" ph=" }" />
-            <marker date="1523110992000" expanded="true" signature="486:695" ph="{...}" />
-            <marker date="1523110992000" expanded="true" signature="757:875" ph="{...}" />
+            <marker date="1523106347000" expanded="true" signature="5:320" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="12:312" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="64:304" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="72:215" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="108:147" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="223:296" ph="..." />
+            <marker date="1523106347000" expanded="true" signature="261:284" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPHttpResponse.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
-            <marker date="1523113146000" expanded="true" signature="7:79" ph="..." />
-            <marker date="1523113146000" expanded="true" signature="81:124" ph="/**...*/" />
-            <marker date="1523113146000" expanded="true" signature="637:723" ph="{...}" />
-            <marker date="1523113146000" expanded="true" signature="788:857" ph="{...}" />
-            <marker date="1523113146000" expanded="false" signature="888:903" ph=" { " />
-            <marker date="1523113146000" expanded="false" signature="927:933" ph=" }" />
-            <marker date="1523113146000" expanded="false" signature="962:977" ph=" { " />
-            <marker date="1523113146000" expanded="false" signature="1006:1012" ph=" }" />
-            <marker date="1523113146000" expanded="true" signature="1047:1211" ph="{...}" />
+            <marker date="1523041518000" expanded="true" signature="89:1425" ph="..." />
+            <marker date="1523041518000" expanded="true" signature="444:1414" ph="..." />
+            <marker date="1523041518000" expanded="true" signature="465:626" ph="..." />
+            <marker date="1523041518000" expanded="true" signature="647:815" ph="..." />
+            <marker date="1523041518000" expanded="true" signature="836:1041" ph="..." />
+            <marker date="1523041518000" expanded="true" signature="1062:1222" ph="..." />
+            <marker date="1523041518000" expanded="true" signature="1243:1394" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPHttpRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <marker date="1523114971000" expanded="true" signature="0:43" ph="/**...*/" />
             <marker date="1523114971000" expanded="true" signature="367:475" ph="{...}" />
-            <marker date="1523114971000" expanded="true" signature="516:531" ph=" { " />
-            <marker date="1523114971000" expanded="true" signature="551:557" ph=" }" />
-            <marker date="1523114971000" expanded="true" signature="589:604" ph=" { " />
-            <marker date="1523114971000" expanded="true" signature="642:648" ph=" }" />
+            <marker date="1523114971000" expanded="false" signature="516:531" ph=" { " />
+            <marker date="1523114971000" expanded="false" signature="551:557" ph=" }" />
+            <marker date="1523114971000" expanded="false" signature="589:604" ph=" { " />
+            <marker date="1523114971000" expanded="false" signature="642:648" ph=" }" />
             <marker date="1523114971000" expanded="true" signature="686:992" ph="{...}" />
             <marker date="1523114971000" expanded="false" signature="1039:1054" ph=" { " />
             <marker date="1523114971000" expanded="false" signature="1106:1112" ph=" }" />
@@ -1036,41 +1062,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SearchHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/IndexHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <marker date="1523115663000" expanded="true" signature="7:157" ph="..." />
-            <marker date="1523115663000" expanded="true" signature="159:202" ph="/**...*/" />
-            <marker date="1523115663000" expanded="true" signature="291:298" ph="{...}" />
-            <marker date="1523115663000" expanded="true" signature="347:544" ph="{...}" />
-            <marker date="1523115663000" expanded="true" signature="615:630" ph=" { " />
-            <marker date="1523115663000" expanded="true" signature="663:669" ph=" }" />
-            <marker date="1523115663000" expanded="true" signature="745:820" ph="{...}" />
-            <marker date="1523115663000" expanded="true" signature="901:1290" ph="{...}" />
+            <marker date="1523120052000" expanded="true" signature="7:244" ph="..." />
+            <marker date="1523120052000" expanded="true" signature="246:289" ph="/**...*/" />
+            <marker date="1523120052000" expanded="true" signature="369:376" ph="{...}" />
+            <marker date="1523120052000" expanded="true" signature="444:653" ph="{...}" />
+            <marker date="1523120052000" expanded="true" signature="715:833" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Routes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1523115408000" expanded="true" signature="49:92" ph="/**...*/" />
-            <marker date="1523115408000" expanded="false" signature="202:217" ph=" { " />
-            <marker date="1523115408000" expanded="false" signature="246:252" ph=" }" />
-            <marker date="1523115408000" expanded="true" signature="304:319" ph=" { " />
-            <marker date="1523115408000" expanded="true" signature="331:337" ph=" }" />
+            <marker date="1523120064000" expanded="true" signature="43:86" ph="/**...*/" />
+            <marker date="1523120064000" expanded="true" signature="167:291" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SearchHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding>
+            <marker date="1523119999000" expanded="true" signature="7:115" ph="..." />
+            <marker date="1523119999000" expanded="true" signature="117:160" ph="/**...*/" />
+            <marker date="1523119999000" expanded="true" signature="249:256" ph="{...}" />
+            <marker date="1523119999000" expanded="true" signature="305:502" ph="{...}" />
+            <marker date="1523119999000" expanded="false" signature="573:588" ph=" { " />
+            <marker date="1523119999000" expanded="false" signature="621:627" ph=" }" />
+            <marker date="1523119999000" expanded="true" signature="703:778" ph="{...}" />
+            <marker date="1523119999000" expanded="true" signature="859:1248" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SearchHttpServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <marker date="1523118920000" expanded="true" signature="0:43" ph="/**...*/" />
             <marker date="1523118920000" expanded="true" signature="45:161" ph="..." />
@@ -1082,10 +1119,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Routes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPHttpResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <marker date="1523122325000" expanded="true" signature="41:84" ph="/**...*/" />
+            <marker date="1523122325000" expanded="true" signature="649:718" ph="{...}" />
+            <marker date="1523122325000" expanded="false" signature="749:764" ph=" { " />
+            <marker date="1523122325000" expanded="false" signature="788:794" ph=" }" />
+            <marker date="1523122325000" expanded="false" signature="823:838" ph=" { " />
+            <marker date="1523122325000" expanded="false" signature="867:873" ph=" }" />
+            <marker date="1523122325000" expanded="true" signature="908:1072" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CoreNLPWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

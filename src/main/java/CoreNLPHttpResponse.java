@@ -1,6 +1,5 @@
 import com.google.common.base.Strings;
 
-import javax.xml.ws.http.HTTPException;
 
 /**
  * Created by dakshins on 07/04/18.
@@ -11,18 +10,12 @@ public class CoreNLPHttpResponse
             "valid text";
     private static final int invalidHttpResponseCode = 422;
     private static final int validHttpResponseCode = 200;
-    int httpResponseCode;
-    String responseBody ;
+    int httpResponseCode = validHttpResponseCode;
+    String responseBody  = "OK";
     
     public static CoreNLPHttpResponse ERROR = new CoreNLPHttpResponse(invalidResponseBody, invalidHttpResponseCode);
     
-    public CoreNLPHttpResponse()
-    {
-        responseBody = "OK";
-        httpResponseCode = validHttpResponseCode;
-    }
-    
-    private CoreNLPHttpResponse(String body, int code)
+    public CoreNLPHttpResponse(String body, int code)
     {
         responseBody = body;
         httpResponseCode = code;
