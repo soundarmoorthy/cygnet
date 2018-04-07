@@ -24,18 +24,15 @@ public class SearchHttpServer
     
     private HttpServer server;
     
-    private void initialize() throws Exception
+    private SearchHttpServer() throws  Exception
     {
         server = HttpServer.create(new InetSocketAddress(9080), 0);
-        server.createContext("/", new IndexHandler());
-        server.createContext("/search", new SearchHandler());
         server.setExecutor(Executors.newFixedThreadPool(8));
-        System.out.println("Server started");
+        Routes.setup(server);
     }
     
     private void startHttpServerAndWait() throws Exception
     {
-        initialize();
         server.start();
     }
 }
