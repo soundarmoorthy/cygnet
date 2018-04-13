@@ -1,4 +1,9 @@
 import edu.stanford.nlp.simple.*;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.util.CollectionFactory;
+
+import java.util.Collection;
+import java.util.Collections;
 
 
 /**
@@ -11,6 +16,7 @@ public class CoreNLPWrapper
     public CoreNLPWrapper(final String searchText)
     {
         this.searchText = searchText.replace('+',' ');
+        Collections.sort(, Collections.reverseOrder());
         sentence = new Sentence(searchText);
     }
     
@@ -19,6 +25,7 @@ public class CoreNLPWrapper
     {
         StringBuilder builder = new StringBuilder();
         builder.append("<ul>");
+        Tree tree =  sentence.parse();
         for(String tag : sentence.nerTags())
         {
             builder.append("<li>"+ tag + "</li>");
