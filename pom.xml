@@ -11,23 +11,28 @@
         <dependency>
             <groupId>edu.stanford.nlp</groupId>
             <artifactId>stanford-corenlp</artifactId>
-            <version>3.8.0</version>
+            <version>RELEASE</version>
         </dependency>
+        <dependency>
+    <groupId>edu.stanford.nlp</groupId>
+    <artifactId>stanford-pos-tagger</artifactId>
+    <version>RELEASE</version>
+</dependency>
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
-            <version>1.9.12</version>
+            <version>RELEASE</version>
         </dependency>
         <dependency>
             <groupId>edu.stanford.nlp</groupId>
             <artifactId>stanford-corenlp</artifactId>
-            <version>3.8.0</version>
+            <version>RELEASE</version>
             <classifier>models</classifier>
         </dependency>
         <dependency>
             <groupId>edu.stanford.nlp</groupId>
             <artifactId>stanford-parser</artifactId>
-            <version>3.8.0</version>
+            <version>RELEASE</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
