@@ -6,7 +6,6 @@ import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
 
 import com.sun.net.httpserver.HttpServer;
-import edu.stanford.nlp.util.logging.RedwoodConfiguration;
 
 public class SearchHttpServer
 {
