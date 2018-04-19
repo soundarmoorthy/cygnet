@@ -29,3 +29,7 @@ TBD
 ## Defining Data Set
 
 TBD
+
+## Caveats
+* Make sure that you are passing -Xmx8192m to command line. The kbd annotator initialization sequence throws OOM on account of inadquete heap space if not provided when running the application
+* This application starts the application server in port 9080. If you wish to change it, in SearchHttpServer.java update the port variable to a desired value.
