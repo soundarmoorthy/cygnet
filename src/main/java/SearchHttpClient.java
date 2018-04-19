@@ -16,7 +16,7 @@ public class SearchHttpClient
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
     
-        BufferedReader in = new BufferedReader = new InputStreamReader(conn.getInputStream()));
+        BufferedReader in = new BufferedReader (new InputStreamReader(conn.getInputStream()));
         String inputLine;
         StringBuffer content = new StringBuffer();
         while ((inputLine = in.readLine()) != null)
