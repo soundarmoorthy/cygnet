@@ -13,8 +13,16 @@ This library is written to be focused on US Healthcare information, where we att
 2. Maven 3
 3. Optional (IntelliJ IDEA).
 
-### Running from command line 
-TBD
+### Running from command line
+#### Compiling
+*mvn compile*
+#### Packaging
+*mvn package*
+#### Running the application
+* java -Xmx8192m -jar target/cygnet-1.0.1.jar*
+
+#### Viewing output
+Goto browser and run "http://localhost:9080"
 
 ### Running from IntelliJ IDEA
 1. Intellij IDEA -> Import Project -> Open pom.xml in root folder
