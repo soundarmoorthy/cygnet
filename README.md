@@ -6,20 +6,30 @@ This project is intended to support searching a data set using NLP. This uses St
 
 This library is written to be focused on US Healthcare information, where we attempt to add annotations for Procedure and Diagnosis codes(ICD-* codes, CPT codes), National Provider Identifiers.
 
+## Status
+
+[![CircleCI](https://circleci.com/gh/soundarmoorthy/cygnet.svg?style=svg)](https://circleci.com/gh/soundarmoorthy/cygnet)
 
 ## Development
 ### Prerequisites
 1. Java 1.8 or later
 2. Maven 3
 3. Optional (IntelliJ IDEA).
+4. x64 Operating sytsem (CoreNLP kbd annotator will fail if memory allocated is less than 6000 MB)
 
-### Running from command line
-#### Compiling
+### Compiling
 *mvn compile*
-#### Packaging
+
+### Packaging
 *mvn package*
+
 #### Running the application
-* java -Xmx8192m -jar target/cygnet-1.0.1.jar*
+* Windows
+    > set MAVEN_OPTS="-Xmx8192m"
+    > mvn spring-boot:run
+* Linux / Mac
+    > export MAVEN_OPTS='-Xmx8192m' //Or anything greater than 6000
+    > mvn spring-boot:run
 
 #### Viewing output
 Goto browser and run "http://localhost:9080"

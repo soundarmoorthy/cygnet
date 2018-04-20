@@ -16,5 +16,4 @@ public class CygnetBoot {
         app.setBannerMode(Banner.Mode.CONSOLE);
         app.run(args);
     }
-
 }
