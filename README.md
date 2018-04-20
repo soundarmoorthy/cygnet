@@ -1,14 +1,11 @@
 # cygnet
+[![CircleCI](https://circleci.com/gh/soundarmoorthy/cygnet.svg?style=svg)](https://circleci.com/gh/soundarmoorthy/cygnet)
 ## Introduction
 A java search client that does NLP search using the Stanford CoreNLP engine.
 
 This project is intended to support searching a data set using NLP. This uses Stanford university's core nlp library to achive this. The core nlp library supports annotating a given input text. This library uses it's capabilities to annotate the semantic information in a given search text and then uses the information to find out which part of the data set to search for information. 
 
 This library is written to be focused on US Healthcare information, where we attempt to add annotations for Procedure and Diagnosis codes(ICD-* codes, CPT codes), National Provider Identifiers.
-
-## Status
-
-[![CircleCI](https://circleci.com/gh/soundarmoorthy/cygnet.svg?style=svg)](https://circleci.com/gh/soundarmoorthy/cygnet)
 
 ## Development
 ### Prerequisites
