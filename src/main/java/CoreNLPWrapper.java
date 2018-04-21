@@ -1,11 +1,13 @@
 import edu.stanford.nlp.pipeline.CoreDocument;
 import edu.stanford.nlp.pipeline.CoreSentence;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.util.ArrayMap;
 import edu.stanford.nlp.util.logging.JavaUtilLoggingAdaptor;
 import edu.stanford.nlp.util.logging.Redwood;
 import edu.stanford.nlp.util.logging.RedwoodConfiguration;
 import edu.stanford.nlp.util.logging.RedwoodPrintStream;
 
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -46,23 +48,40 @@ public class CoreNLPWrapper
     public CoreNLPHttpResponse response()
     {
         annotate(document);
+
         StringBuilder builder = new StringBuilder();
         builder.append("<ul>");
-    
+
+        prepare(builder);
+
+        return CoreNLPHttpResponse.NEW
+                .withBody(builder.toString())
+                .withHttpCode(200)
+                .withHeaders(headers());
+    }
+
+    private void prepare(StringBuilder builder) {
+
         CoreSentence sentence = document.sentences().get(0);
-    
+
         String nerTags = String.join(",", sentence.nerTags());
         builder.append("<li>" + nerTags + "</li>");
-    
+
         String posTags = String.join(",", sentence.posTags());
         builder.append("<li>" + posTags + "</li>");
-    
+
         builder.append("</ul>");
-        return new CoreNLPHttpResponse(builder.toString(), 200);
     }
-    
+
     private synchronized void annotate(CoreDocument coreDocument)
     {
         pipeline.annotate(coreDocument);
+    }
+
+    public Map<String, String> headers()
+    {
+        ArrayMap<String,String> map = new ArrayMap<>();
+        map.put("ContentType", "text/html");
+        return map;
     }
 }

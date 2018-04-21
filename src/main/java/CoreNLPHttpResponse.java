@@ -1,4 +1,10 @@
 import com.google.common.base.Strings;
+import edu.stanford.nlp.util.ArrayMap;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -9,21 +15,38 @@ public class CoreNLPHttpResponse
     private static final String invalidResponseBody = "The input search text is not valid. Please try again with " +
             "valid text";
     private static final int invalidHttpResponseCode = 422;
-    private static final int validHttpResponseCode = 200;
-    int httpResponseCode = validHttpResponseCode;
-    String responseBody  = "OK";
-    
-    public static CoreNLPHttpResponse ERROR = new CoreNLPHttpResponse(invalidResponseBody, invalidHttpResponseCode);
-    
-    public CoreNLPHttpResponse(String body, int code)
+
+    private int httpResponseCode;
+    private String responseBody;
+    private Map<String,String> headers;
+
+    public static CoreNLPHttpResponse ERROR = new CoreNLPHttpResponse()
+            .withBody(invalidResponseBody)
+            .withHttpCode(invalidHttpResponseCode);
+
+
+    public static final CoreNLPHttpResponse NEW = new CoreNLPHttpResponse();
+
+    private CoreNLPHttpResponse()
     {
-        responseBody = body;
-        httpResponseCode = code;
     }
-    
-    public int httpCode()
+
+    public CoreNLPHttpResponse withBody(String body)
     {
-        return httpResponseCode;
+        this.responseBody = body;
+        return this;
+    }
+
+    public CoreNLPHttpResponse withHeaders(Map<String,String> headers)
+    {
+        this.headers = headers;
+        return this;
+    }
+
+    public CoreNLPHttpResponse withHttpCode(int code)
+    {
+        this.httpResponseCode = code;
+        return this;
     }
     
     public int length()
@@ -31,7 +54,7 @@ public class CoreNLPHttpResponse
         return responseBody.length();
     }
     
-    public String body()
+    public String getBody()
     {
         if(Strings.isNullOrEmpty(responseBody))
         {
@@ -41,5 +64,16 @@ public class CoreNLPHttpResponse
         {
             return responseBody;
         }
+    }
+
+    public int getHttpCode()
+    {
+        return httpResponseCode;
+    }
+
+    public Map<String, String> getHeaders()
+    {
+        ArrayMap x;
+        return headers;
     }
 }

@@ -1,50 +1,62 @@
-import com.sun.net.httpserver.HttpExchange;
-import com.sun.net.httpserver.HttpHandler;
+import java.util.Map;
 import java.io.OutputStream;
+
+import com.sun.net.httpserver.HttpHandler;
+import com.sun.net.httpserver.HttpExchange;
 
 /**
  * Created by dakshins on 07/04/18.
  */
+
 public class SearchHandler implements HttpHandler
 {
-    
     public SearchHandler()
     {
     }
     
-    public void handle(HttpExchange t)
+    public void handle(HttpExchange e)
     {
-        CoreNLPHttpRequest request = new CoreNLPHttpRequest(t);
+        CoreNLPHttpRequest request = new CoreNLPHttpRequest(e);
+        CoreNLPHttpResponse response = null;
         if (!request.valid())
         {
-            respond(t, error(request));
+            response = CoreNLPHttpResponse.ERROR;
         }
-        respond(t, serve(request));
-    }
-    
-    private CoreNLPHttpResponse error(CoreNLPHttpRequest request)
-    {
-        return CoreNLPHttpResponse.ERROR;
-    }
-    
-    private CoreNLPHttpResponse serve(CoreNLPHttpRequest request)
-    {
-        return new CoreNLPWrapper(request.searchText()).response();
+        else
+        {
+            response = new CoreNLPWrapper(request.searchText()).response();
+        }
+        respond(e, response);
     }
     
     private void respond(HttpExchange t, CoreNLPHttpResponse response)
     {
         try
         {
-            t.sendResponseHeaders(response.httpCode(), response.length());
-            OutputStream os = t.getResponseBody();
-            os.write(response.body().getBytes());
-            os.close();
+            sendResponseHeaders(t, response);
+            sendResponseBody(t, response);
         }
         catch (Exception ex)
         {
+            //TODO : Think of cases of failures and appropriate return codes
             ex.printStackTrace();
-            //How do we handle the error in writing response body.
+        }
+    }
+
+    private void sendResponseBody(HttpExchange t, CoreNLPHttpResponse response) throws Exception
+    {
+        t.sendResponseHeaders(response.getHttpCode(), response.length());
+        OutputStream os = t.getResponseBody();
+        os.write(response.getBody().getBytes());
+        os.close();
+    }
+
+    private void sendResponseHeaders(HttpExchange t, CoreNLPHttpResponse response) throws Exception
+    {
+        Map<String, String > headers =response.getHeaders();
+        for(String key : headers.keySet())
+        {
+            t.getResponseHeaders().add(key, headers.get(key));
         }
     }
 }
