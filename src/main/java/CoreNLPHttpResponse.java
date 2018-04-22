@@ -73,7 +73,6 @@ public class CoreNLPHttpResponse
 
     public Map<String, String> getHeaders()
     {
-        ArrayMap x;
         return headers;
     }
 }

@@ -1,17 +1,10 @@
+import java.util.Map;
+import java.util.Properties;
+import edu.stanford.nlp.util.ArrayMap;
 import edu.stanford.nlp.pipeline.CoreDocument;
 import edu.stanford.nlp.pipeline.CoreSentence;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.util.ArrayMap;
-import edu.stanford.nlp.util.logging.JavaUtilLoggingAdaptor;
-import edu.stanford.nlp.util.logging.Redwood;
 import edu.stanford.nlp.util.logging.RedwoodConfiguration;
-import edu.stanford.nlp.util.logging.RedwoodPrintStream;
-
-import java.util.Map;
-import java.util.Properties;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
-
 
 /**
  * Created by dakshins on 07/04/18.
@@ -22,15 +15,14 @@ public class CoreNLPWrapper
     final CoreDocument document;
     private static StanfordCoreNLP pipeline;
     
-    public static void initialize()
+    public static void initialize() throws Exception
     {
         System.out.println("Initializing NLP pipeline...");
         RedwoodConfiguration.standard().apply();
         pipeline = new StanfordCoreNLP(properties());
-    
         System.out.println("Completed initializing pipeline...");
     }
-    
+
     public CoreNLPWrapper(final String searchText)
     {
         this.searchText = searchText.replace('+', ' ');
@@ -81,7 +73,7 @@ public class CoreNLPWrapper
     public Map<String, String> headers()
     {
         ArrayMap<String,String> map = new ArrayMap<>();
-        map.put("ContentType", "text/html");
+        map.put("ContentType", "application/xhtml+xml");
         return map;
     }
 }

@@ -8,6 +8,7 @@
                 <stanford.core.nlp.models.version>${stanford.core.nlp.version}</stanford.core.nlp.models.version>
                 <stanford.nlp.parser.version>${stanford.core.nlp.version}</stanford.nlp.parser.version>
                 <com.google.guava.version>14.0.1</com.google.guava.version>
+                <io.lettuce.version>5.0.2.RELEASE</io.lettuce.version>
                 <this.artifact.id>cygnet</this.artifact.id>
                 <this.group.id>in.soundararajan.${this.artifact.id}</this.group.id>
             </properties>
@@ -49,6 +50,13 @@
         <artifactId>guava</artifactId>
         <version>${com.google.guava.version}</version>
       </dependency>
+
+        <dependency>
+  <groupId>io.lettuce</groupId>
+  <artifactId>lettuce-core</artifactId>
+  <version>${io.lettuce.version}</version>
+</dependency>
+
     </dependencies>
 
     <build>
