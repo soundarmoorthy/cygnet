@@ -41,18 +41,19 @@ public class CoreNLPWrapper
     {
         annotate(document);
 
-        StringBuilder builder = new StringBuilder();
-        builder.append("<ul>");
 
-        prepare(builder);
+        String responseBody = prepare();
 
         return CoreNLPHttpResponse.NEW
-                .withBody(builder.toString())
+                .withBody(responseBody)
                 .withHttpCode(200)
                 .withHeaders(headers());
     }
 
-    private void prepare(StringBuilder builder) {
+    private String prepare() {
+
+        StringBuilder builder = new StringBuilder();
+        builder.append("<html><body><ul>");
 
         CoreSentence sentence = document.sentences().get(0);
 
@@ -61,8 +62,10 @@ public class CoreNLPWrapper
 
         String posTags = String.join(",", sentence.posTags());
         builder.append("<li>" + posTags + "</li>");
+        builder.append("</ul></body></html>");
 
-        builder.append("</ul>");
+        return builder.toString();
+
     }
 
     private synchronized void annotate(CoreDocument coreDocument)
